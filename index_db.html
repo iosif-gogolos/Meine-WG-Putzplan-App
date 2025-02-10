@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WG-Putzplan</title>
+  <!-- CSS einbinden -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Lottie-Bibliothek einbinden -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Willkommen zu unserem WG-Putzplan</h1>
+	</header>
+  <div class="splash-screen">
+    <!-- Carousel für Lottie Animationen -->
+    <div class="carousel-container">
+      <div class="carousel-slide" id="slide1">
+        <div class="lottie-container" id="lottie1"></div>
+        <p>Effektive Reinigung – abhackbare Checkliste</p>
+      </div>
+      <div class="carousel-slide" id="slide2">
+        <div class="lottie-container" id="lottie2"></div>
+        <p>Sicherheit – Daten privat &amp; Passwort gehashed</p>
+      </div>
+      <div class="carousel-slide" id="slide3">
+        <div class="lottie-container" id="lottie3"></div>
+        <p>Nachhaltigkeit – weniger Papier &amp; Abfall</p>
+      </div>
+    </div>
+    <!-- Navigation für Carousel -->
+    <div class="carousel-nav">
+      <button id="prev-btn">&lt;</button>
+      <button id="next-btn">&gt;</button>
+    </div>
+    <!-- Prominente Anmelde-/Registrierungs-Buttons -->
+    <div class="button-container">
+      <a href="backend/login.php" class="btn">Anmelden</a>
+      <a href="backend/register.php" class="btn">Registrieren</a>
+    </div>
+  </div>
+
+  <!-- JavaScript einbinden -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

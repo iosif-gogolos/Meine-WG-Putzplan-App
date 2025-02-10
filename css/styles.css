@@ -1,0 +1,135 @@
+:root{
+	--background: #F2EFE7;
+	--primary: #9ACBD0;
+	--secondary: #48A6A7;
+	--accent: #2973B2;
+	--text-color: #333;
+}
+
+body{
+	margin: 0;
+	font-family: 'Helvetica', sans-serif;
+	background-color: var(--background);
+	color: var(--text-color);
+}
+
+/* Anmelde-/Registrierungs-Buttons */
+.button-container {
+  margin-top: 2rem;
+}
+
+.splash-screen {
+  text-align: center;
+  padding: 2rem;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  display: none;
+  padding: 1rem;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.lottie-container {
+  width: 100%;
+  height: 300px;  /* Standardhöhe für Desktop */
+  margin: 0 auto;
+}
+
+/* Navigation Buttons */
+.carousel-nav {
+  margin: 1rem;
+}
+
+.carousel-nav button {
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header{
+	background-color: var(--primary);
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+}
+
+.container{
+	max-width: 1200px;
+	maring: 2rem auto;
+	padding: 1rem;
+}
+
+.btn{
+	display: inline-block;
+	background-color: var(--secondary);
+	color: #fff;
+	padding: 0.5 rem 1rem;
+	text-decoration: none;
+	border-radius: 4px;
+	margin: 0.5 rem;
+}
+
+.btn:hover {
+	background-color: var(--accent);
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	background-color: var(--primary);
+	color: #fff;
+}
+
+/* Media Queries */
+
+/* Mobile: max-width 767px */
+@media screen and (max-width: 767px) {
+  .lottie-container {
+    height: 200px;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet: min-width 768px and max-width 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .lottie-container {
+    height: 250px;
+  }
+  .btn {
+    padding: 0.65rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop: min-width 1024px */
+@media screen and (min-width: 1024px) {
+  .lottie-container {
+    height: 300px;
+  }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+
+:
+

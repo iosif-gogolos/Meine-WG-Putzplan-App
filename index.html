@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WG-Putzplan Kalenderübersicht</title>
+  <!-- CSS einbinden -->
+  <link rel="stylesheet" href="css/wg-putzplan-styles.css">
+</head>
+<body>
+  <header>
+    <h1>WG-Putzplan Kalenderübersicht</h1>
+  </header>
+
+  <main>
+    <!-- Kalenderübersicht: Zwei vergangene und drei kommende Sonntage -->
+    <div class="calendar-overview">
+      <!-- Vergangene Sonntage (als erledigt markiert) -->
+      <div class="calendar-tile past">
+        <span class="date">02.02.2025</span>
+        <span class="member">Vahid</span>
+        <span class="status">&#10004;</span>
+      </div>
+      <div class="calendar-tile past">
+        <span class="date">09.02.2025</span>
+        <span class="member">Iosif</span>
+        <span class="status">&#10004;</span>
+      </div>
+      <!-- Kommende Sonntage -->
+      <div class="calendar-tile upcoming">
+        <span class="date">16.02.2025</span>
+        <span class="member">Vahid</span>
+      </div>
+      <div class="calendar-tile upcoming">
+        <span class="date">23.02.2025</span>
+        <span class="member">Antonella</span>
+      </div>
+      <div class="calendar-tile upcoming">
+        <span class="date">02.03.2025</span>
+        <span class="member">Iosif</span>
+      </div>
+    </div>
+
+    <!-- Reinigungsaufgaben Checkliste -->
+    <section class="cleaning-tasks">
+      <h2>Reinigungsaufgaben:</h2>
+
+      <div class="task-category">
+        <h3>Küche:</h3>
+        <ul>
+          <li>
+            <input type="checkbox" id="kitchen-task-1">
+            <label for="kitchen-task-1">Arbeitsflächen abwischen</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kitchen-task-2">
+            <label for="kitchen-task-2">Staubsaugen</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kitchen-task-3">
+            <label for="kitchen-task-3">Müll rausbringen</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kitchen-task-4">
+            <label for="kitchen-task-4">Putzen</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="task-category">
+        <h3>Bad:</h3>
+        <ul>
+          <li>
+            <input type="checkbox" id="bathroom-task-1">
+            <label for="bathroom-task-1">Waschbecken und Toilette putzen</label>
+          </li>
+          <li>
+            <input type="checkbox" id="bathroom-task-2">
+            <label for="bathroom-task-2">Müll entsorgen (Wenn voll ist)</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="task-category">
+        <h3>Flur:</h3>
+        <ul>
+          <li>
+            <input type="checkbox" id="hallway-task-1">
+            <label for="hallway-task-1">Staubsaugen</label>
+          </li>
+          <li>
+            <input type="checkbox" id="hallway-task-2">
+            <label for="hallway-task-2">Putzen</label>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WG-Putzplan</p>
+  </footer>
+
+  <!-- JavaScript einbinden -->
+  <script src="js/script.js"></script>
+</body>
+</html>
